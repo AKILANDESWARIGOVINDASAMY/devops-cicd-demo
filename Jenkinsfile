@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "interviewdot/cicd-demo"
+    registry = "akilag1997/cicd-demo"
     registryCredential = 'docker-hub-credentials'
     dockerImage = ''
   }
@@ -32,10 +32,6 @@ pipeline {
         }
       }
     }
-    stage('Deploy to K8S'){
-        steps{
-            sh 'kubectl apply -f deployment.yml'
-       }
-    }
+   
   }
 }
