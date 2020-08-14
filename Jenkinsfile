@@ -11,12 +11,7 @@ pipeline {
         git 'https://github.com/net-vinothkumar/devops-cicd-demo.git'
       }
     }
-     stage('Initialize'){
-       tools{
-        def dockerHome = tool 'docker'
-        env.PATH = "${dockerHome}/bin:${env.PATH}"
-       }
-    }
+    
     stage('Building image') {
       steps{
         script {
