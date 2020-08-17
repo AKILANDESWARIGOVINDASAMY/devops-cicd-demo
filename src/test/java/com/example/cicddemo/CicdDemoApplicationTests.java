@@ -1,4 +1,3 @@
-package com.technicalkeeda.app;
 package com.example.cicddemo;
 
 import org.junit.jupiter.api.Test;
